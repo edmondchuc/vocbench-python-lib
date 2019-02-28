@@ -3,7 +3,7 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-with open_local(['requirements.txt']) as req:
+with open('requirements.txt') as req:
     install_requires = req.read().split("\n")
 
 setuptools.setup(
