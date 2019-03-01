@@ -12,7 +12,7 @@ def auth_login(user, password, endpoint):
         endpoint + '/Auth/login',
         data={
             'email': user,
-            'password': password
+            '_password': password
         }
     )
     if r.status_code == 200:
